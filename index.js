@@ -45,23 +45,6 @@ app.use("/api/admin", adminRoutes);
 // });
 
 app.use(errorHandler);
-
-const io = require("socket.io")(server);
-
-io.on("connection", (socket) => {
-  console.log("Client connected");
-
-  // Send a message to the client every 5 seconds
-  const interval = setInterval(() => {
-    socket.emit("message", "Hello from the server!");
-  }, 5000);
-
-  socket.on("disconnect", () => {
-    console.log("Client disconnected");
-    clearInterval(interval);
-  });
-});
-
 const PORT = process.env.PORT || 4444;
 server.listen(PORT, () => console.log("Server running on port ", PORT));
 // app.close();
