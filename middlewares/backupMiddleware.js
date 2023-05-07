@@ -7,7 +7,7 @@ exports.backupMiddleware = async (req, res, next) => {
     const token = authHeader && authHeader.split(" ")[1]; // split the header string and get the token
     if (!token) return res.json({ error: "Invalid Token. Please Login" });
     const decode = jwt.verify(token, process.env.JWT_SECRET);
-    // console.log({ decode });
+
     // console.log("getUser", getUser);
     const { email } = decode;
     const user = await User.findOne({ email });
@@ -15,6 +15,7 @@ exports.backupMiddleware = async (req, res, next) => {
     req.user = user;
   } catch (error) {
     console.log(error);
+    next(error);
   }
   next();
 };

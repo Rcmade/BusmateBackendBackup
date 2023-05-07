@@ -16,7 +16,7 @@ const FiveDaysLocation = new mongoose.Schema({
     required: true,
     default: 1,
   },
-  contributer: {
+  contributor: {
     // type: String,
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
@@ -30,6 +30,5 @@ const FiveDaysLocation = new mongoose.Schema({
     default: Date.now,
   },
 });
-
 
 module.exports = mongoose.model("FiveDaysLocation", FiveDaysLocation);

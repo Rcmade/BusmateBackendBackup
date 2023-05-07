@@ -21,7 +21,7 @@ const realTimeLocation = new mongoose.Schema({
     required: true,
     default: 1,
   },
-  contributer: {
+  contributor: {
     // type: String,
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
@@ -41,6 +41,4 @@ const realTimeLocation = new mongoose.Schema({
   },
 });
 
-
 module.exports = mongoose.model("RealtimeLocation", realTimeLocation);
-

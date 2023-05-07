@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const contributerData = new Schema(
+const contributorData = new Schema(
   {
-    currentContributer: {
+    currentContributor: {
       type: mongoose.Schema.Types.ObjectId,
       trim: true,
       ref: "User",
     },
 
-    previousFiveContributer: [
+    previousFiveContributor: [
       {
-        contributer: {
+        contributor: {
           type: mongoose.Schema.Types.ObjectId,
           trim: true,
           ref: "User",
@@ -38,4 +38,4 @@ const contributerData = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("contributerData", contributerData);
+module.exports = mongoose.model("contributorData", contributorData);

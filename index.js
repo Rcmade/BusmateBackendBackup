@@ -6,8 +6,6 @@ const adminRoutes = require("./routes/admin");
 const cookieParser = require("cookie-parser");
 const http = require("http"); // import http module
 
-const authRoutes = require("./routes/auth");
-const locationRoutes = require("./routes/locationRoute");
 const { errorHandler } = require("./middlewares/error");
 const morgan = require("morgan");
 var bodyParser = require("body-parser");
@@ -34,15 +32,7 @@ app.use(morgan("dev"));
 app.use(helmet());
 
 // route middlewares
-app.use("/api", authRoutes);
-app.use("/api", locationRoutes);
 app.use("/api/admin", adminRoutes);
-
-// console.log(path.join(__dirname, "/test.html"));
-
-// app.get("/", function (req, res) {
-//   res.sendFile(path.join(__dirname, "/test.html"));
-// });
 
 app.use(errorHandler);
 const PORT = process.env.PORT || 4444;
