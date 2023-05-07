@@ -1,7 +1,7 @@
 const User = require("../models/user");
 const EmailServices = require("../Services/emailServices");
 const UserModel = require("../models/user");
-const dataTransferEmail = require("../../BusmetsBackend/helpers/dataTransferEmail");
+const dataTransferEmail = require("../helpers/dataTransferEmail");
 class Admin {
   async backupUser(req, res) {
     if (req.user.role === "superAdmin" && req.user.isAuthenticated === true) {
@@ -65,5 +65,3 @@ class Admin {
 }
 
 module.exports = new Admin();
-
-
