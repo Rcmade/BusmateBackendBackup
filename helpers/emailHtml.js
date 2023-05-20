@@ -28,9 +28,9 @@ const emailHtml = (email, name, otp, timeLimit = "10 Min") => {
               <tr>
                 <td class="align-center">
                   <img
-                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1680269961/BusmetsLogo_frbuvl.png"
+                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1680269961/BusmateLogo_frbuvl.png"
                     height="80"
-                    alt="BusMets"
+                    alt="Busmate"
                   />
                 </td>
               </tr>
@@ -61,7 +61,7 @@ const emailHtml = (email, name, otp, timeLimit = "10 Min") => {
                     <tr>
                       <p>Dear ${name},</p>
                       <p>
-                        Thank you for signing up with BusMets. To ensure the
+                        Thank you for signing up with Busmate. To ensure the
                         security of your account, we require you to verify your
                         email address.
                       </p>
@@ -72,7 +72,7 @@ const emailHtml = (email, name, otp, timeLimit = "10 Min") => {
                         verification process.
                       </p>
                       <p>
-                        We are thrilled to have you as part of the BusMets
+                        We are thrilled to have you as part of the Busmate
                         community. Our goal is to provide you with the best bus
                         booking experience possible, and we're committed to
                         constantly improving our services to meet your needs.
@@ -81,15 +81,15 @@ const emailHtml = (email, name, otp, timeLimit = "10 Min") => {
                         If you have any questions or concerns about your
                         account, please feel free to reach out to our customer
                         support team at
-                        <a href="mailto: contact.busmets@gmail.com">Contact</a>.
+                        <a href="mailto: contact.busmate@gmail.com">Contact</a>.
                         We're always here to help!
                       </p>
                       <p>
-                        Thank you for choosing BusMets, and we look forward to
+                        Thank you for choosing Busmate, and we look forward to
                         serving you soon.
                       </p>
                       <p>Best regards,</p>
-                      <p>BusMets Team</p>
+                      <p>Busmate Team</p>
                     </tr>
                   </table>
                 </td>

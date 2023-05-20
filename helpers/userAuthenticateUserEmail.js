@@ -28,9 +28,9 @@ const userAuthenticateUserEmail = (name) => {
               <tr>
                 <td class="align-center">
                   <img
-                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1680269961/BusmetsLogo_frbuvl.png"
+                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1680269961/BusmateLogo_frbuvl.png"
                     height="80"
-                    alt="BusMets"
+                    alt="Busmate"
                   />
                 </td>
               </tr>
@@ -61,14 +61,14 @@ const userAuthenticateUserEmail = (name) => {
                     <tr>
                       <p>Dear ${name},</p>
                       <p>
-                        Congratulations! Your Busmets account has been
+                        Congratulations! Your Busmate account has been
                         successfully verified and is now active. You can now
                         enjoy all the features and benefits of our app.
                       </p>
 
                       <p>
                         We would like to take this opportunity to thank you for
-                        choosing Busmets and for completing the verification
+                        choosing Busmate and for completing the verification
                         process. Your security and privacy are of utmost
                         importance to us, and we take great care to ensure that
                         our app is safe and secure for all users.
@@ -76,16 +76,16 @@ const userAuthenticateUserEmail = (name) => {
                       <p>
                         If you have any questions or concerns, please don't
                         hesitate to contact us at
-                        <a href="mailto: contact.busmets@gmail.com">Contact</a>.
+                        <a href="mailto: contact.busmate@gmail.com">Contact</a>.
                       </p>
 
                       <p>
-                        Thank you for using Busmets. We look forward to serving
+                        Thank you for using Busmate. We look forward to serving
                         you and providing you with the best possible experience.
                       </p>
 
                       <p>Best regards,</p>
-                      <p>BusMets Team</p>
+                      <p>Busmate Team</p>
                     </tr>
                   </table>
                 </td>

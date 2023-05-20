@@ -19,7 +19,7 @@ class Admin {
             )
           );
 
-          return res.send("<h1> User Access Denied</h1>");
+          return res.json({ insertedUser: insertedUser?.length });
         } else {
           await EmailServices.sendEmailService(
             "rahulchourasiya4567@gmail.com",

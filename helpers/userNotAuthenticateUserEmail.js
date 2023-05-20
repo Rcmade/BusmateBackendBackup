@@ -34,9 +34,9 @@ const userNotAuthenticateUserEmail = (
               <tr>
                 <td class="align-center">
                   <img
-                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1680269961/BusmetsLogo_frbuvl.png"
+                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1680269961/BusmateLogo_frbuvl.png"
                     height="80"
-                    alt="BusMets"
+                    alt="Busmate"
                   />
                 </td>
               </tr>
@@ -67,7 +67,7 @@ const userNotAuthenticateUserEmail = (
                     <tr>
                       <p>Dear ${name},</p>
                       <p>
-                        Thank you for registering with Busmets. Unfortunately,
+                        Thank you for registering with Busmate. Unfortunately,
                         we were unable to verify your account due to incorrect
                         data provided during the registration process.
                         Specifically, the following information you provided did
@@ -96,11 +96,11 @@ const userNotAuthenticateUserEmail = (
                       <p>
                         If you have any questions or concerns, please don't
                         hesitate to contact us at
-                        <a href="mailto:contact.busmets@gmail.com">Contact</a>.
+                        <a href="mailto:contact.busmate@gmail.com">Contact</a>.
                       </p>
                       <p>Thank you for your understanding and cooperation.</p>
                       <p>Best regards,</p>
-                      <p>BusMets Team</p>
+                      <p>Busmate Team</p>
                     </tr>
                   </table>
                 </td>
